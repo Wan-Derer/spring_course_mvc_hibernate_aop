@@ -23,8 +23,6 @@ public class EmloyeesController {
     List<Employee> employees = employeeService.getAllEmployees();
     model.addAttribute("allEmps", employees);
 
-    System.out.println(employees);
-
     return "all-employees";
   }
 

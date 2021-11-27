@@ -31,4 +31,10 @@ public class EmployeeServiceImpl implements EmployeeService{
   public Employee getEmployeeById(int id) {
     return employeeDAO.getEmployeeById(id);
   }
+
+  @Transactional
+  @Override
+  public void deleteEmployee(int id) {
+    employeeDAO.deleteEmployee(id);
+  }
 }
